@@ -1,5 +1,7 @@
 
 # docker build --tag musicbot .
+# docker run musicbot
+# docker run -it musicbot bash
 
 FROM ubuntu:16.04
 
@@ -24,10 +26,23 @@ RUN apt-get install -y libffi-dev
 #
 #	Running setup.py bdist_wheel for PyNaCl
 #
-# ...cane take awhile! Took like 2 minutes on my iMac.
+# ...can take awhile! Took like 2 minutes on my iMac.
 #
 RUN python3 -m pip install -U -r /var/Musicbot/requirements.txt 
 
+RUN apt-get install -y libopus0
 
 
+
+#
+# TODO:
+#
+# Copy in configuration files
+# Eventually write /entrypoint.sh which grabs credentials from the environment
+# Create docker-compose file that can have the environment variables specified in it
+#
+
+COPY entrypoint.sh /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
 

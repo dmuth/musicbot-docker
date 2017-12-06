@@ -3,3 +3,6 @@
 *.swp
 *~
 
+# Don't allow credentials to be checked in
+docker-compose.yml
+

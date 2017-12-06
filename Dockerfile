@@ -32,17 +32,11 @@ RUN python3 -m pip install -U -r /var/Musicbot/requirements.txt
 
 RUN apt-get install -y libopus0
 
-
-
-#
-# TODO:
-#
-# Copy in configuration files
-# Eventually write /entrypoint.sh which grabs credentials from the environment
-# Create docker-compose file that can have the environment variables specified in it
-#
+RUN apt-get install -y ffmpeg
 
 COPY entrypoint.sh /entrypoint.sh
+
+COPY config/* /var/Musicbot/config/
 
 CMD ["/entrypoint.sh"]
 

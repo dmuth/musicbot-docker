@@ -1,0 +1,38 @@
+
+version: "3"
+
+services:
+
+  jukebox:
+
+    build: .
+    environment:
+
+      # 
+      # The bot token goes here.  
+      #
+      # How to create a bot: https://github.com/Just-Some-Bots/MusicBot/wiki/FAQ 
+      # 
+      TOKEN: BOT_TOKEN_GOES_HERE
+
+      #
+      # The user who owns the bot.
+      #
+      OWNER_ID: OWNER_ID_GOES_HERE
+
+      #
+      # The ID of the text channel that the bot joins
+      #
+      TEXT_CHANNEL: ID_OF_TEXT_CHANNEL_GOES_HERE
+
+      #
+      # The voice channel that the bot jons
+      #
+      VOICE_CHANNEL: ID_OF_VOICE_CHANNEL_GOES_HERE
+
+      #
+      # Optional roles to grant to the bot
+      #
+      #GRANT_TO_ROLES: ROLES_TO_GRANT_TO_BOT_GO_HERE
+
+

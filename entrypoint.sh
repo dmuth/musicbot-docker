@@ -32,6 +32,11 @@ else
 
 fi
 
+#
+# Delete comments and write the output to the autoplaylist.txt file
+# 
+cat autoplaylist.txt.IN | sed -e "/^#/d" > autoplaylist.txt
+
 popd 2>/dev/null
 
 /usr/bin/python3 /var/Musicbot/run.py

@@ -1,8 +1,13 @@
 
 
-# docker build --tag musicbot .
-# docker run musicbot
-# docker run -it musicbot bash
+# Build:
+#	docker build --tag musicbot .
+#
+# Run:
+# 	docker run -e TOKEN=token -e OWNER_ID=owner_id -e TEXT_CHANNEL=text_channel_id -e VOICE_CHANNEL=voice_channel_id [-e GRANT_TO_ROLES=role_id ] musicbot
+#
+# Debugging:
+# 	docker run -it musicbot bash
 
 FROM ubuntu:16.04
 

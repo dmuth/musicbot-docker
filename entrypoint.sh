@@ -3,6 +3,12 @@
 # Our main entrypoint to run the Musicbot
 #
 
+# Errors are fatal
+set -e
+
+# Debugging
+#set -x
+
 cd /var/Musicbot/
 
 pushd config/ 2>/dev/null
@@ -28,5 +34,5 @@ fi
 
 popd 2>/dev/null
 
-/usr/bin/python3.5 /var/Musicbot/run.py
+/usr/bin/python3 /var/Musicbot/run.py
 

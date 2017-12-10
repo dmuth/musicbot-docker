@@ -13,6 +13,27 @@ be written directly into the configuration file within the container.
 The end result is that this container will have no external side-effects.  All changes made and
 packages downloaded will stay within the container and go away when the container is destroyed.
 
+BONUS: The file `config/autoplaylist.txt.IN` will **support comments**.  e.g., you can have lines like this:
+
+```
+# Star Trek: The Motion Picture (Score Suite) - YouTube
+https://www.youtube.com/watch?v=ULuXSN1Zv1c
+# [NEW] Undertale OST - Hopes and Dreams Epic Rock - YouTube
+https://www.youtube.com/watch?v=AySnkGYvNIc
+# Undertale Remix ðŸŽµ Varien - Heart of the Core (Core Theme) - GameChops - YouTube
+https://www.youtube.com/watch?v=NcY0Zyw_oFY
+# Waters of Megalovania (ORIGINAL) - YouTube
+https://www.youtube.com/watch?v=IQBqSt15Vi0
+```
+
+Yeah I like Undertale. <3
+
+Anyway, the `entrypoint.sh` script will script those comments before feeding that file to 
+Jukebox, so feel free to add comments to your copy of that file as you see fit.
+
+Got any interesting playlists? <a href="https://github.com/dmuth/musicbot-docker/issues/new">Send them my way!</a>
+I may add support for selecting a playlist in a future release. :-)
+
 
 ## Usage
 

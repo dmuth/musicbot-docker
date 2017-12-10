@@ -40,8 +40,16 @@ I may add support for selecting a playlist in a future release. :-)
 
 ### Via Docker Hub
 
-`docker pull dmuth1/musicbot`
-`docker run -e TOKEN=token -e OWNER_ID=owner_id -e TEXT_CHANNEL=text_channel_id -e VOICE_CHANNEL=voice_channel_id [-e GRANT_TO_ROLES=role_id ] musicbot`
+```
+docker pull dmuth1/musicbot
+docker run \
+	-e TOKEN=token \
+	-e OWNER_ID=owner_id \
+	-e TEXT_CHANNEL=text_channel_id \
+	-e VOICE_CHANNEL=voice_channel_id \
+	[-e GRANT_TO_ROLES=role_id ] \
+	musicbot
+```
 
 
 ### Or... clone this repo and run via docker-compose

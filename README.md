@@ -3,6 +3,8 @@
 
 This repo contains a Dockerfile for the <a href="https://github.com/Just-Some-Bots/MusicBot">Discord Musicbot</a>.
 
+It can also be found <a href="https://hub.docker.com/r/dmuth1/musicbot/">on Docker Hub</a>.
+
 
 ## Differences Between This Dockerfile and the Dockerfile Shipped With Musicbot
 

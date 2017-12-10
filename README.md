@@ -13,12 +13,15 @@ be written directly into the configuration file within the container.
 The end result is that this container will have no external side-effects.  All changes made and
 packages downloaded will stay within the container and go away when the container is destroyed.
 
+
 ## Usage
+
 
 ### Via Docker Hub
 
 `docker pull dmuth1/musicbot`
 `docker run -e TOKEN=token -e OWNER_ID=owner_id -e TEXT_CHANNEL=text_channel_id -e VOICE_CHANNEL=voice_channel_id [-e GRANT_TO_ROLES=role_id ] musicbot`
+
 
 ### Or... clone this repo and run via docker-compose
 
@@ -29,5 +32,10 @@ packages downloaded will stay within the container and go away when the containe
 `docker compose build && docker-compose up`
 
 
+## Contact
+
+I am @dmuth <a href="https://twitter.com/dmuth">on Twitter</a> <a href="https://facebook.com/dmuth">and Facebook</a>.
+I can also be reached via email: **dmuth AT dmuth DOT org**.
+Or just file a bug here. 
 
 

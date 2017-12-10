@@ -1,4 +1,9 @@
 
+#
+# To run the Music bot:
+# docker-compose build && docker-compose up
+#
+
 version: "3"
 
 services:

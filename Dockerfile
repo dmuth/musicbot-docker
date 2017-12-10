@@ -1,4 +1,7 @@
 #
+# Based on a Dockerfile I first found at https://github.com/Omar007/Docker-DiscordMusicBot/blob/master/Dockerfile,
+# I optmized it quite a bit.
+#
 # Build:
 #	docker build --tag musicbot .
 #

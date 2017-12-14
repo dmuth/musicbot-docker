@@ -64,6 +64,12 @@ vim docker-compose.yml # Edit this file and include the API token, and owner and
 docker compose build && docker-compose up
 ```
 
+
+## Where to find this In The Wild
+
+The Musicbot is regularly run on <a href="http://discord.gg/anthrocon">Anthrocon's Discord Server</a>.  Feel free to drop on by!
+
+
 ## Contact
 
 I am @dmuth <a href="https://twitter.com/dmuth">on Twitter</a> <a href="https://facebook.com/dmuth">and Facebook</a>.

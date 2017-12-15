@@ -39,6 +39,11 @@ I may add support for selecting a playlist in a future release. :-)
 
 ## Usage
 
+### On Amazon Elastic Container Service
+
+**Yes**, this will work in ECS. <a href="https://medium.com/@dmuth/dockerizing-discords-music-bot-in-amazon-ecs-3b7d0fe372a7">I wrote up a post explaining how to set this up in ECS.</a>
+
+
 
 ### Via Docker Hub
 
